@@ -1,0 +1,16 @@
+
+<div class="card" style="width: 18rem;">
+  <img src="https://tse3.mm.bing.net/th?id=OIP.jvBehwDCO7mdrkLjzr8E5QHaHa&pid=Api&P=0&h=180" >
+  <div class="card-body ">
+    <h3 class="card-title text-success">Departments</h3>
+    <a href="/departments/create" class="btn btn-success">Add new department</a>
+    <ul class="text-success">
+  
+    {{#each departmentsnames}}
+   
+    <li>{{name}}___{{code}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
