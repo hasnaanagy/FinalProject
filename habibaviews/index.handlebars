@@ -1,0 +1,19 @@
+<div class="card" style="width: 18rem;">
+  <img src="https://i.pinimg.com/564x/c5/6f/58/c56f5806f9abedb2f2793477c0cfa529.jpg" class="card-img-top" >
+  <div class="card-body ">
+    <h3 class="card-title text-success">Doctor Accounts</h3>
+    <a href="/doctorroute/create" class="btn btn-success">Add new doctor account </a>
+    <ul class="text-success">
+  {{#each doctorroute}}
+<div>
+    <a href="/doctorroute/{{_id}}" class="text-success">
+    
+    {{name}}
+    </a>
+    </div>
+
+{{/each}}
+</ul>
+  </div>
+</div>
+

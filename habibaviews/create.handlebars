@@ -1,0 +1,31 @@
+<h1 style="color:#198754; text-align: center;">create new doctor account</h1>
+<form action="/doctorroute" method="POST">
+    <div>
+        <label for="">Name</label>
+        <input type="text" class="form-control" name="Name" style=" border:solid  rgb(151, 185, 173) ;">   
+    </div>
+     <div>
+        <label for="">id</label>
+        <input type="text" class="form-control" name="id" style=" border:solid  rgb(151, 185, 173) ;">
+    </div>
+     <div>
+        <label for="">Subject</label>
+        <select name="subject" id="" class="form-select" style=" border:solid  rgb(151, 185, 173) ;">
+            {{#each doctorroute}}
+              <option value="{{_id}}">{{subject}}</option>
+
+            {{/each}}
+            <option value="programming 1">programming 1</option>
+            <option value="programming 2">programming 2</option>
+            <option value="introduction in programming">introduction in programming </option>
+            <option value="os 1">os 1</option>
+            <option value="os 2">os 2</option>
+            <option value="multimedia 1">multimedia 1</option>
+            <option value="multimedia 2">Network</option>
+        </select> 
+    </div>
+    <div><br>
+        <button class="btn btn-success"type="submit">Save</button>
+    </div>
+</form>
+<img src="https://i.pinimg.com/564x/63/0d/59/630d59a4d2c80c1d8ab2503b69a4a421.jpg" >

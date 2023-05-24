@@ -1,0 +1,31 @@
+<div class="card" style="width: 50rem;">
+  <img src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/subjectbooks-istock.jpg?itok=C0wdpAVl" class="card-img-top" >
+  <div class="card-body ">
+    <h3 class="card-title text-success">Subjects</h3>
+    <a href="/subjects/create" class="btn btn-success">Add a new Subject</a>
+    <ul class="text-success">
+    {{#each subjectsnames}}
+    
+    
+    <div class="d-flex justify content-between ">
+    
+    <li ><a href="/subjects/{{_id}}"  class="text-success">{{name}}</a>
+
+   <div>
+     <a href="/subjects/{{_id}}/Edit">
+     Edit
+     </a>
+     <form action="/subjects/{{subject._id}}?_method=DELETE" method="post">
+      <button type="submit">delete</button>
+     </form>
+      
+    </div>
+    </li>
+     
+    
+
+      {{/each}}
+</ul>
+  </div>
+</div>
+

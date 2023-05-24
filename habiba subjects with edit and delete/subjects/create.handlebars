@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    
+
+<h1 style="color:#198754; text-align: center;">create new subject</h1>
+<form action="/subjects" method="post">
+    {{!-name}}
+    <div>
+        <label for="">Name</label>
+        <input  type="text" class="form-control"  name="name" style=" border:solid  rgb(151, 185, 173) ;">
+    </div>
+ {{!-code}}
+      <div>
+        <label for="">Code</label>
+        <input type="text" class="form-control"  name="code" style=" border:solid  rgb(151, 185, 173) ;">
+    </div>
+     {{!-department}}
+      <div>
+        <label for="" >department</label>
+        <select   id=" " class="form-select"  name="department" style=" border:solid  rgb(151, 185, 173) ; " >
+                {{#each departments}}
+                 <option value="{{_id}}">{{name}}</option>
+              {{/each}}
+           
+        </select>
+    </div>
+     {{!-previous subjects}}
+      <div>
+        <label for="" >Previous subjects</label>
+        <input type="text" class="form-control"  name="previous subjects" style=" border:solid  rgb(151, 185, 173) ; ">
+    </div><br>
+<div>
+    <button type="submit" class="btn btn-success">Save</button>
+    </div>
+</form>
+<br><br>
+<img src="https://aljawaz.com/wp-content/uploads/2017/10/university-subjects.jpg" >
+</body>
+</html>
