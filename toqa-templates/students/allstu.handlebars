@@ -1,0 +1,34 @@
+<html>
+    <style>
+table, th, td {
+  border:3px solid #198754;
+}
+</style>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://i.pinimg.com/564x/59/b8/2c/59b82cf5d47f98d85bf47bbcbdefe906.jpg" class="card-img-top" >
+  <div class="card-body ">
+    <h3 class="card-title text-success">Students</h3>
+    <a href="/students/createstu" class="btn btn-success">Add new student</a>
+
+  </div>
+</div>
+<table>
+  <tr>
+    <th>name</th>
+    <th>id</th>
+   
+  </tr>
+      {{#each studentsnames}}
+      
+  <tr>
+    <td>{{academiccode}}</td>
+    
+  </tr>
+  <tr>
+    <td>{{name}}</td>
+  
+  </tr>
+  {{/each}}
+</table>
+</html>
